@@ -36,6 +36,17 @@ body::before {
   opacity: 0.55;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: -35% 0 auto;
+  height: 35%;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(244, 244, 240, 0.025), transparent);
+  animation: scan 12s linear infinite;
+}
+
 button,
 a {
   color: inherit;
@@ -104,15 +115,18 @@ a {
 
 .brand-mark,
 .dialog-mark {
-  width: 2rem;
+  width: 2.4rem;
   aspect-ratio: 1;
-  display: inline-grid;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-family: Didot, "Bodoni 72", "Times New Roman", serif;
-  font-size: 1.15rem;
-  line-height: 1;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.orbital-mark {
+  background-color: var(--black);
+  background-image: url("orbital-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 148%;
 }
 
 .site-header > p,
@@ -167,6 +181,15 @@ h1,
   text-transform: uppercase;
 }
 
+.whisper {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-family: Didot, "Bodoni 72", "Times New Roman", serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+}
+
 .signal {
   position: absolute;
   inset: 0;
@@ -203,6 +226,33 @@ h1,
   border-radius: 50%;
   background: var(--white);
   box-shadow: 0 0 2rem 0.7rem rgba(255, 255, 255, 0.12);
+}
+
+.signal-code {
+  position: absolute;
+  z-index: 1;
+  color: rgba(244, 244, 240, 0.32);
+  font-size: 0.48rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.signal-code-north {
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signal-code-west {
+  top: 50%;
+  left: calc(var(--edge) + 0.45rem);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.signal-code-east {
+  top: 50%;
+  right: calc(var(--edge) + 0.45rem);
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .access-trigger {
@@ -282,8 +332,8 @@ h1,
 
 .dialog-mark {
   margin: 0 auto 3rem;
-  width: 4.5rem;
-  font-size: 2.6rem;
+  width: 7rem;
+  box-shadow: 0 1.5rem 4rem rgba(5, 5, 5, 0.18);
 }
 
 .access-dialog .kicker {
@@ -322,6 +372,11 @@ h1,
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes scan {
+  from { transform: translateY(0); }
+  to { transform: translateY(390%); }
+}
+
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 5px;
@@ -351,8 +406,23 @@ h1,
   }
 
   .site-header > p,
-  .site-footer p:first-child {
+  .site-footer p:first-child,
+  .signal-code-west,
+  .signal-code-east {
     display: none;
+  }
+
+  .site-footer {
+    justify-content: center;
+  }
+
+  .site-footer p:last-child {
+    display: none;
+  }
+
+  .site-footer p:nth-child(2) {
+    font-size: 0.48rem;
+    letter-spacing: 0.18em;
   }
 
   .landing-content {
