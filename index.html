@@ -3,79 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ONE LYFE X TXC — a private social clubhouse. By invitation."
-    />
+    <meta name="description" content="AFTER MIDNIGHT — a New Year's Eve 2026 presentation by ONE LYFE × TXC in Toronto." />
     <meta name="theme-color" content="#050505" />
-    <meta property="og:title" content="ONE LYFE X TXC" />
-    <meta property="og:description" content="A private social clubhouse. By invitation." />
+    <meta property="og:title" content="AFTER MIDNIGHT — ONE LYFE × TXC" />
+    <meta property="og:description" content="New Year's Eve 2026. Toronto. Details to be announced." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://onelyfetxc.com/" />
     <meta property="og:image" content="https://onelyfetxc.com/orbital-logo.png" />
-    <title>ONE LYFE X TXC</title>
+    <title>AFTER MIDNIGHT — ONE LYFE × TXC</title>
     <link rel="icon" href="orbital-logo.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <div class="frame" aria-hidden="true"></div>
-
+    <a class="skip-link" href="#main">Skip to the event</a>
+    <div class="grain" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="#main" aria-label="ONE LYFE X TXC, home">
-        <span class="brand-mark orbital-mark" aria-hidden="true"></span>
-        <span>ONE LYFE <i>X</i> TXC</span>
+      <a class="brand" href="#main" aria-label="ONE LYFE × TXC, home">
+        <img src="orbital-logo.png" alt="" width="44" height="44" />
+        <span>ONE LYFE <i>×</i> TXC</span>
       </a>
-      <p>Toronto</p>
+      <p>Toronto <span aria-hidden="true">/</span> 43.6532° N</p>
     </header>
-
-    <main class="landing" id="main">
-      <div class="signal" aria-hidden="true">
-        <span class="signal-line"></span>
-        <span class="signal-point"></span>
-        <span class="signal-code signal-code-north">Signal 001</span>
-        <span class="signal-code signal-code-west">Private frequency</span>
-        <span class="signal-code signal-code-east">Toronto after dark</span>
-      </div>
-
-      <div class="landing-content">
-        <p class="kicker">Private social clubhouse</p>
-        <h1>Some things are<br />better left unexplained.</h1>
-        <p class="subline">Membership by invitation.</p>
-        <p class="whisper">For those who make the night.</p>
-      </div>
-
-      <button class="access-trigger" type="button" data-open-access>
-        <span>Request access</span>
-        <span aria-hidden="true">↗</span>
-      </button>
-
-      <p class="edition">001 / Invitations soon</p>
+    <main id="main">
+      <section class="hero" aria-labelledby="event-title">
+        <div class="orbit" aria-hidden="true">
+          <span class="orbit-ring orbit-ring-outer"></span><span class="orbit-ring orbit-ring-inner"></span>
+          <span class="orbit-sweep"></span><span class="orbit-point"></span>
+        </div>
+        <p class="eyebrow reveal">A New Year's Eve presentation</p>
+        <h1 id="event-title" class="reveal"><span>After</span><span class="outline">Midnight</span></h1>
+        <div class="hero-meta reveal">
+          <p>December 31, 2026</p><p>Toronto, Canada</p><p>Venue to be announced</p>
+        </div>
+        <a class="scroll-cue" href="#details"><span>Enter the night</span><span aria-hidden="true">↓</span></a>
+        <p class="edition">001 / NYE 2026</p>
+      </section>
+      <section class="manifesto" id="details" aria-labelledby="manifesto-title">
+        <div class="section-index" aria-hidden="true">01 — The signal</div>
+        <div class="manifesto-copy">
+          <p class="eyebrow">When one year disappears</p>
+          <h2 id="manifesto-title">The night begins<br />after midnight.</h2>
+          <p class="lede">ONE LYFE × TXC presents an after-dark New Year's Eve experience in Toronto. The room, programme, and access details remain unreleased.</p>
+        </div>
+        <div class="vertical-note" aria-hidden="true">For those who make the night</div>
+      </section>
+      <section class="event-card" aria-labelledby="event-details-title">
+        <div class="event-card-mark" aria-hidden="true"><img src="orbital-logo.png" alt="" width="160" height="160" /></div>
+        <div class="event-card-content">
+          <p class="eyebrow">ONE LYFE × TXC / Presentation 001</p>
+          <h2 id="event-details-title">After Midnight</h2>
+          <dl>
+            <div><dt>Date</dt><dd>December 31, 2026</dd></div>
+            <div><dt>City</dt><dd>Toronto</dd></div>
+            <div><dt>Venue</dt><dd>To be announced</dd></div>
+            <div><dt>Access</dt><dd>Details forthcoming</dd></div>
+          </dl>
+          <p class="status">No tickets or registration are currently available.</p>
+        </div>
+      </section>
+      <section class="closing" aria-labelledby="closing-title">
+        <p class="eyebrow">The first signal arrives soon</p>
+        <h2 id="closing-title">Meet us<br />after midnight.</h2>
+        <p>Official announcements will appear here when confirmed.</p>
+        <a href="#main">Return to the beginning <span aria-hidden="true">↑</span></a>
+      </section>
     </main>
-
     <footer class="site-footer">
-      <p>ONE LYFE X TXC</p>
-      <p>© 2026 ONE LYFE Entertainment</p>
-      <p>Private / Toronto</p>
+      <p>© <span data-year>2026</span> ONE LYFE Entertainment</p><p>ONE LYFE × TXC</p><p>Toronto / Canada</p>
     </footer>
-
-    <dialog class="access-dialog" data-access-dialog aria-labelledby="access-title">
-      <div class="dialog-inner">
-        <button class="dialog-close" type="button" data-close-access aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-        <span class="dialog-mark orbital-mark" aria-hidden="true"></span>
-        <p class="kicker">Access</p>
-        <h2 id="access-title">Not open.<br />Not public.</h2>
-        <p>
-          The first invitations will be released privately.<br />Stay close.
-        </p>
-        <p class="dialog-status">Application channel forthcoming</p>
-      </div>
-    </dialog>
   </body>
 </html>
-
-<!-- GitHub Pages deployment refresh -->

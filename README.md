@@ -1,19 +1,20 @@
-# ONE LYFE X TXC
+# ONE LYFE × TXC — AFTER MIDNIGHT
 
-Ultra-minimal, dependency-free social clubhouse teaser for `onelyfetxc.com`, prepared for GitHub Pages.
+A dependency-free, cinematic event site for **AFTER MIDNIGHT**, a ONE LYFE × TXC New Year's Eve 2026 presentation in Toronto.
 
-## Content placeholders
+## Confirmed public information
 
-The site deliberately withholds programming, venue, launch dates, membership criteria, pricing, benefits, and capacity. The application channel is marked as forthcoming. Add details only when the club is ready to reveal them.
+- Date: December 31, 2026
+- City: Toronto, Canada
+- Venue: to be announced
+- Access, tickets, programme, pricing, and capacity: not yet announced
+
+The site intentionally does not offer a signup or imply that tickets are available.
 
 ## Local preview
 
-From this folder, run a static web server and open its local URL in a browser. No build step or package installation is required.
+Run any static web server in the repository root. No build step or package installation is required.
 
 ## GitHub Pages
 
-The repository should publish from the `main` branch at the repository root. The included `CNAME` file sets the custom domain to `onelyfetxc.com`, and `.nojekyll` prevents Jekyll processing.
-
-## Custom domain DNS
-
-DNS remains managed at Squarespace. See [DEPLOYMENT.md](DEPLOYMENT.md) for the exact GitHub Pages and Squarespace sequence, DNS records, and current status.
+Keep publishing from the `main` branch at the repository root. `CNAME` preserves the `onelyfetxc.com` custom domain and `.nojekyll` preserves the current static Pages setup.
