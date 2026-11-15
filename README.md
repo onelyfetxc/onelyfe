@@ -1,10 +1,10 @@
 # ONE LYFE × TXC — AFTER MIDNIGHT
 
-A dependency-free, cinematic event site for **AFTER MIDNIGHT**, a ONE LYFE × TXC New Year's Eve 2026 presentation in Toronto.
+A dependency-free, cinematic event site for **AFTER MIDNIGHT**, a ONE LYFE × TXC New Year's Day 2027 presentation in Toronto.
 
 ## Confirmed public information
 
-- Date: December 31, 2026
+- Date: January 1, 2027
 - City: Toronto, Canada
 - Venue: to be announced
 - Access, tickets, programme, pricing, and capacity: not yet announced
