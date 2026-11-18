@@ -12,8 +12,7 @@
     <meta property="og:image" content="https://onelyfetxc.com/orbital-logo.png" />
     <title>AFTER MIDNIGHT — ONE LYFE × TXC</title>
     <link rel="icon" href="orbital-logo.png" type="image/png" />
-    <link rel="stylesheet" href="styles.css?v=20261118-4" />
-    <script src="https://cdn.tickettailor.com/js/TTWidget.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261118-5" />
     <script src="script.js?v=20261118-1" defer></script>
   </head>
   <body>
@@ -52,12 +51,12 @@
         </div>
         <div class="hero-offer reveal" aria-label="First-release ticket types">
           <div class="hero-ticket-types">
-            <a href="https://buytickets.at/onelyfetxc/2536275" onclick="if(window.TTWidget){event.preventDefault();TTWidget.loadEvent('onelyfetxc',2536275,'website_widget');}">Early Bird <span aria-hidden="true">↗</span></a>
-            <a href="https://buytickets.at/onelyfetxc/2536275" onclick="if(window.TTWidget){event.preventDefault();TTWidget.loadEvent('onelyfetxc',2536275,'website_widget');}">VIP Experience <span aria-hidden="true">↗</span></a>
+            <a href="#checkout">Early Bird <span aria-hidden="true">↗</span></a>
+            <a href="#checkout">VIP Experience <span aria-hidden="true">↗</span></a>
           </div>
           <p class="hero-ticket-warning"><strong>Limited availability.</strong> Tickets may sell out and require joining the waitlist.</p>
         </div>
-        <a class="scroll-cue" href="https://buytickets.at/onelyfetxc/2536275" onclick="if(window.TTWidget){event.preventDefault();TTWidget.loadEvent('onelyfetxc',2536275,'website_widget');}"><span>Secure first release</span><span aria-hidden="true">↗</span></a>
+        <a class="scroll-cue" href="#checkout"><span>Secure first release</span><span aria-hidden="true">↗</span></a>
         <p class="edition">001 / NYD 2027</p>
       </section>
       <section class="manifesto" id="details" aria-labelledby="manifesto-title">
@@ -105,16 +104,40 @@
             </article>
           </div>
           <div class="ticket-actions" id="tickets" data-reveal>
-            <a class="ticket-button" href="https://buytickets.at/onelyfetxc/2536275" target="_blank" rel="noopener" onclick="if(window.TTWidget){event.preventDefault();TTWidget.loadEvent('onelyfetxc',2536275,'website_widget');}"><span>Secure first-release tickets</span><span aria-hidden="true">↗</span></a>
+            <a class="ticket-button" href="#checkout"><span>Secure first-release tickets</span><span aria-hidden="true">↗</span></a>
             <p>Secure checkout and digital tickets by Ticket Tailor. Current release pricing is not guaranteed once this allocation sells out.</p>
           </div>
+        </div>
+      </section>
+      <section class="ticket-checkout" id="checkout" aria-labelledby="checkout-title">
+        <div class="ticket-checkout-heading">
+          <p class="eyebrow" data-reveal>First release</p>
+          <h2 id="checkout-title" data-reveal>Choose your<br />experience.</h2>
+          <p data-reveal>Early Bird and VIP Experience tickets are available in limited quantities. Once an allocation sells out, access may move to a waitlist.</p>
+        </div>
+        <div class="ticket-widget-shell" data-reveal>
+          <!-- Ticket Tailor Widget -->
+          <div class="tt-widget">
+            <div class="tt-widget-fallback">
+              <p><a href="https://buytickets.at/onelyfetxc/2536275">Open secure ticket checkout</a></p>
+            </div>
+            <script src="https://app.tickettailorassets.com/js/widgets/min/widget.js"
+              data-url="https://www.tickettailor.com/events/onelyfetxc/2536275"
+              data-type="inline"
+              data-inline-minimal="true"
+              data-inline-show-logo="false"
+              data-inline-bg-fill="false"
+              data-inline-inherit-ref-from-url-param=""
+              data-inline-ref="website_widget"></script>
+          </div>
+          <!-- End Ticket Tailor Widget -->
         </div>
       </section>
       <section class="closing" aria-labelledby="closing-title">
         <p class="eyebrow" data-reveal>First release now available</p>
         <h2 id="closing-title" data-reveal>Meet us<br />after midnight.</h2>
         <p data-reveal>Early Bird / VIP Experience</p>
-        <a href="https://buytickets.at/onelyfetxc/2536275" target="_blank" rel="noopener" data-reveal onclick="if(window.TTWidget){event.preventDefault();TTWidget.loadEvent('onelyfetxc',2536275,'website_widget');}">Get access <span aria-hidden="true">↗</span></a>
+        <a href="#checkout">Get access <span aria-hidden="true">↗</span></a>
       </section>
     </main>
     <footer class="site-footer">
