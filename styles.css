@@ -80,7 +80,16 @@ dt { color: var(--muted); }
 dd { text-align: right; }
 .status { margin: 2rem 0 0; color: var(--muted); font-size: .57rem; line-height: 1.6; letter-spacing: .18em; text-transform: uppercase; }
 
-.ticket-actions { margin-top: 2.2rem; }
+
+.ticket-incentives { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 2.2rem; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.ticket-incentives article { min-height: 10rem; display: flex; flex-direction: column; justify-content: space-between; gap: 1.25rem; padding: 1.35rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
+.ticket-incentives .release-note { grid-column: 1 / -1; min-height: auto; background: linear-gradient(105deg, rgba(255,255,255,.035), rgba(255,255,255,.09), rgba(255,255,255,.025)); }
+.ticket-incentives p, .ticket-incentives span { margin: 0; font-size: .5rem; line-height: 1.55; letter-spacing: .18em; text-transform: uppercase; }
+.ticket-incentives p { color: var(--silver); }
+.ticket-incentives span { color: var(--muted); }
+.ticket-incentives h3 { margin: 0; font-family: Didot, "Bodoni 72", "Times New Roman", serif; font-size: clamp(1.8rem, 3.1vw, 3rem); font-weight: 400; line-height: 1; letter-spacing: -.025em; }
+
+.ticket-actions { margin-top: 1.2rem; }
 .ticket-button { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 2rem; width: 100%; padding: 1.2rem 1.35rem; overflow: hidden; border: 1px solid rgba(255,255,255,.55); background: var(--white); color: var(--black); font-size: .62rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; transition: color .35s ease, background .35s ease, border-color .35s ease; }
 .ticket-button::before { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, #111 0%, #858585 42%, #f7f7f4 49%, #383838 57%, #080808 100%); transform: translateX(-102%); transition: transform .55s cubic-bezier(.16,1,.3,1); }
 .ticket-button span { position: relative; z-index: 1; }
@@ -148,6 +157,8 @@ dd { text-align: right; }
   .event-card-mark img { width: min(15rem, 70%); }
   .event-card-content { padding: 5rem 2rem; }
   .event-card h2 { font-size: clamp(3.8rem, 17vw, 6rem); }
+  .ticket-incentives { grid-template-columns: 1fr; }
+  .ticket-incentives .release-note { grid-column: auto; }
   dl div { grid-template-columns: 6rem 1fr; gap: 1rem; }
   .closing h2 { font-size: clamp(4rem, 18vw, 6.5rem); }
   .site-footer { min-height: 10rem; flex-direction: column; justify-content: center; text-align: center; }
