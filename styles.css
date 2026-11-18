@@ -105,6 +105,16 @@ dd { text-align: right; }
 .ticket-button:hover::before, .ticket-button:focus-visible::before { transform: translateX(0); }
 .ticket-actions > p { margin: .85rem 0 0; color: var(--muted); font-size: .5rem; line-height: 1.6; letter-spacing: .17em; text-transform: uppercase; }
 
+
+.ticket-checkout { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(18rem, .8fr) minmax(22rem, 1.2fr); gap: clamp(2.5rem, 7vw, 8rem); padding: clamp(6rem, 10vw, 10rem) max(var(--edge), 2rem); border-top: 1px solid var(--line); background: rgba(5,5,5,.92); }
+.ticket-checkout-heading { align-self: start; position: sticky; top: 3rem; }
+.ticket-checkout h2 { margin: 1.8rem 0 0; font-family: Didot, "Bodoni 72", "Times New Roman", serif; font-size: clamp(3.6rem, 7vw, 7rem); font-weight: 400; line-height: .88; letter-spacing: -.045em; }
+.ticket-checkout-heading > p:last-child { max-width: 31rem; margin: 2.25rem 0 0; color: var(--muted); font-size: .6rem; line-height: 1.75; letter-spacing: .15em; text-transform: uppercase; }
+.ticket-widget-shell { min-height: 34rem; padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--line); background: #0a0a0a; overflow: hidden; }
+.tt-widget, .tt-widget iframe { width: 100% !important; }
+.tt-widget-fallback { display: grid; min-height: 28rem; place-items: center; }
+.tt-widget-fallback a { display: inline-flex; padding: 1rem 1.2rem; border: 1px solid var(--white); font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; }
+
 .closing { position: relative; min-height: 90svh; display: grid; place-content: center; padding: 8rem max(var(--edge), 2rem); text-align: center; overflow: hidden; }
 .closing h2 { position: relative; z-index: 2; }
 .closing h2 + p { position: relative; z-index: 2; margin: 2.5rem 0 0; color: var(--muted); font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
@@ -171,6 +181,10 @@ dd { text-align: right; }
   .ticket-incentives { grid-template-columns: 1fr; }
   .ticket-incentives .release-note { grid-column: auto; }
   dl div { grid-template-columns: 6rem 1fr; gap: 1rem; }
+  .ticket-checkout { grid-template-columns: 1fr; padding: 5rem 2rem; }
+  .ticket-checkout-heading { position: static; }
+  .ticket-checkout h2 { font-size: clamp(3.5rem, 16vw, 5.5rem); }
+  .ticket-widget-shell { min-height: 38rem; padding: .65rem; }
   .closing h2 { font-size: clamp(4rem, 18vw, 6.5rem); }
   .site-footer { min-height: 10rem; flex-direction: column; justify-content: center; text-align: center; }
   .site-footer p:nth-child(2) { order: -1; color: var(--silver); }
