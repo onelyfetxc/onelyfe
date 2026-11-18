@@ -62,3 +62,21 @@ if (!reducedMotion.matches && window.matchMedia("(pointer: fine)").matches) {
     { passive: true },
   );
 }
+
+
+// All first-release ticket calls-to-action open one Ticket Tailor checkout.
+const ticketLinks = document.querySelectorAll("[data-ticket-checkout]");
+ticketLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (window.TTWidget && typeof window.TTWidget.loadEvent === "function") {
+      event.preventDefault();
+      try {
+        window.TTWidget.loadEvent("onelyfetxc", 2536275, "website");
+      } catch (error) {
+        window.location.assign(link.href);
+      }
+    }
+    // If the widget script is blocked or unavailable, follow the normal checkout URL.
+  });
+});
