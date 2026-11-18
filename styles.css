@@ -79,6 +79,16 @@ dt, dd { margin: 0; font-size: .62rem; letter-spacing: .2em; text-transform: upp
 dt { color: var(--muted); }
 dd { text-align: right; }
 .status { margin: 2rem 0 0; color: var(--muted); font-size: .57rem; line-height: 1.6; letter-spacing: .18em; text-transform: uppercase; }
+
+.ticket-actions { margin-top: 2.2rem; }
+.ticket-button { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 2rem; width: 100%; padding: 1.2rem 1.35rem; overflow: hidden; border: 1px solid rgba(255,255,255,.55); background: var(--white); color: var(--black); font-size: .62rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; transition: color .35s ease, background .35s ease, border-color .35s ease; }
+.ticket-button::before { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, #111 0%, #858585 42%, #f7f7f4 49%, #383838 57%, #080808 100%); transform: translateX(-102%); transition: transform .55s cubic-bezier(.16,1,.3,1); }
+.ticket-button span, .ticket-button::after { position: relative; z-index: 1; }
+.ticket-button::after { content: "GET TICKETS"; }
+.ticket-button:hover, .ticket-button:focus-visible { color: var(--white); border-color: var(--white); background: #111; }
+.ticket-button:hover::before, .ticket-button:focus-visible::before { transform: translateX(0); }
+.ticket-actions > p { margin: .85rem 0 0; color: var(--muted); font-size: .5rem; line-height: 1.6; letter-spacing: .17em; text-transform: uppercase; }
+
 .closing { position: relative; min-height: 90svh; display: grid; place-content: center; padding: 8rem max(var(--edge), 2rem); text-align: center; overflow: hidden; }
 .closing h2 { position: relative; z-index: 2; }
 .closing h2 + p { position: relative; z-index: 2; margin: 2.5rem 0 0; color: var(--muted); font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
